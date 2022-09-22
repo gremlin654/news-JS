@@ -1,0 +1,101 @@
+:root {
+    --background: #17181c;
+    --color: #fff;
+    --color-sources-border: #30c5ff;
+    --color-sources: #70d6ff;
+    --color-sources-hover: #69db7e;
+    --color-sources-border-hover: #3fcc59;
+    --color-scrollbar: #143861;
+    --color-scrollbar-thumb: #30c5ff;
+    --color-scrollbar-thumb-hover: #253861;
+    --color-toggle: #30c5ff;
+    --color-toggle-hover: #253861;
+    --color-news: #fff;
+}
+
+body {
+    color: var(--color);
+    background: var(--background);
+    font-family: sans-serif;
+}
+
+body.light {
+    --background: #fff;
+    --color: #000;
+    --color-sources: darkslategrey;
+    --color-sources-border: darkslategrey;
+    --color-sources-hover: #673ab7;
+    --color-sources-border-hover: #673ab7;
+    --color-scrollbar: #ced0d2;
+    --color-scrollbar-thumb: #2f4f4f;
+    --color-scrollbar-thumb-hover: #673ab7;
+    --color-toggle: #ced0d2;
+    --color-toggle-hover: #673ab7;
+    --color-news: #e4e4e4;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+.toggle__theme-container {
+    display: flex;
+    width: 110px;
+    height: 56px;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: var(--color-toggle);
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.toggle__theme-container:hover {
+    transform: translateY(-0.25em);
+    background-color: var(--color-toggle-hover);
+}
+.toggle__theme-text {
+    font-size: 1.2rem;
+    color: var(--color);
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .copyright {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+footer .copyright a {
+    color: #444;
+}
+footer .copyright a:hover {
+    color: #555;
+}
+footer .copyright:before {
+    content: '©';
+}
+footer .school__container {
+    display:flex;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
